@@ -1,0 +1,124 @@
+body{
+    color:black;
+    font-family: "Arial", sans-serif;
+}
+
+table{
+    background-color: royalblue;
+}
+
+#app {
+    height: 700px;
+    width: 1100px;
+    margin: 0 auto;
+    background-color: tan;
+}
+
+.topper {
+    background-color: violet;
+    width: 1100px;
+    height: 50px;
+}
+
+.sidenav {
+    height: 650px;
+    width: 200px;
+    background-color: tomato;
+    float: left;
+    margin-top: 50px;
+}
+
+.input_box {
+    background-color: mediumspringgreen;
+    width: 200px;
+    margin-left: 230px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.display_box {
+    background-color: palevioletred;
+    float: right;
+    width: 600px;
+    margin-right: 30px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+/* TEXT */
+
+.topper p{
+    padding-left: 10px;
+    float: left;
+    right: 200px;
+}
+
+#round {
+    float: right;
+}
+
+#experiment {
+    float: right;
+}
+
+.sidenav a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.sidenav a:hover {
+    color:slateblue
+}
+
+h2 {
+    font-size: 30px;
+    padding-left: 230px;
+    background-color: crimson;
+}
+
+.input_box h5{
+    font-size: 20px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.input_box p{
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.write{
+    width: 90%;
+}
+
+.button {
+    margin-top: 10px;
+    width: 94%;
+    font-size: 18px;
+}
+
+.display_box img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.columns{
+    float: left;
+}
+
+.columns p{
+    display: block;
+}
+
+.columns input{
+    display: block;
+    margin-left: 50px;
+    margin-top: 14px;
+    width: 200px;
+}
+
