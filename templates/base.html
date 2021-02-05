@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    {% block head %}{% endblock %}
+</head>
+<div id="app">
+        <nav class="sidenav">
+            <a href="/design/">Design Experiment</a>
+            <a href="/create/">Create Filters</a>
+            <a href="/calibrate/">Calibrate Playback Device</a>
+            <a href="/exemplars/">Filter Exemplars</a>
+            <a href="/playback/">Playback</a>
+            <a href="/">Home</a>
+            <a href="/help/">Help</a>
+        </nav>
+        <div class="topper">
+            <p>Logo</p>
+            <p id="round">Round Number: {{ round_num }}</p>
+            <p id="experiment">Experiment Name: {{ exp_name }}</p>
+        </div>
+        <div class="page">
+            <body>
+                <table>
+                    <tr>
+                        <th width="150">Field</th>
+                        <th width="100">Value</th>
+                    </tr>
+                    {% for value in values %}
+                        <tr>
+                            <td>{{ value.field }}</td>
+                            <td>{{ value.content }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+                {% block body %}{% endblock %}
+            </body>
+        </div>
+
+</div>
+</html>
