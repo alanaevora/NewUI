@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>FilterExemplars</title>
+{% endblock %}
+
+{% block body %}
+<h2>Filter Exemplars</h2>
+<form action='/exemplars/' method='POST'> <!-- form that is connected to '/' (index)-->
+    <div class="display_box">
+        <img src="{{ url_for('static', filename='figure.png') }}" alt="figure">
+        <img src="{{ url_for('static', filename='filter1.png') }}" alt="filter1">
+        <img src="{{ url_for('static', filename='filter2.png') }}" alt="filter2">
+        <img src="{{ url_for('static', filename='filter3.png') }}" alt="filter3">
+        <img src="{{ url_for('static', filename='filter4.png') }}" alt="filter4">
+        <img src="{{ url_for('static', filename='filter5.png') }}" alt="filter5">
+        <img src="{{ url_for('static', filename='filter6.png') }}" alt="filter6">
+        <img src="{{ url_for('static', filename='filter7.png') }}" alt="filter7">
+        <img src="{{ url_for('static', filename='filter8.png') }}" alt="filter8">
+    </div>
+    <div class="input_box">
+        <input class="button" type="submit" type="Filter & Adjust Amplitude">
+    </div>
+</form>
+{% endblock %}
