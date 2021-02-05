@@ -2,8 +2,6 @@ from flask import Flask, render_template, request, redirect, make_response
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
-import base64
-from io import BytesIO
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 import numpy as np
