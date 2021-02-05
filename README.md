@@ -1,12 +1,12 @@
 # NewUI
 
-HOW THE FILES INTERACT WITH EACH OTHER
+HOW THE FILES INTERACT WITH EACH OTHER:
 The file app.py is the file that runs
 Template directory = html files (creates the elements of the UI)
 Static / css directory = the style sheet (changes the layout of the UI)
 Static / images directory = where the figure images that are created will be stored
 
-GETTING STARTED
+GETTING STARTED:
 Before running app.py, you will need to install these python packages in your environment:
 
 from flask import Flask, render_template, request, redirect, make_response
@@ -35,10 +35,10 @@ If you make significant changes to the code in the app.py file, you may need to 
 In order to do this, just retype python3 app.py in the terminal
 
 
-READ BELOW ONCE YOU LOOK OVER THE CODE IN APP.PY
+READ BELOW ONCE YOU LOOK OVER THE CODE IN APP.PY:
 The Todo class stores the user entries in the database
 The controllers communicate between the model/database and the view/hmtl files
 The controllers might also call functions at the bottom of the file that "do" a certain action (which is why I called them doers). Examples of this are the function to create the filters and playback the tracks. 
 
-SOME ADDITIONAL NOTES
+SOME ADDITIONAL NOTES:
 Since the compensation code isn't fully complete, it may be hard to read/understand right now. But if you have questions let me know!
