@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>CreateFilters</title>
+{% endblock %}
+
+{% block body %}
+<h2>Calibrate Playback Device</h2>
+<form action="/calibrate/" method='POST'> <!-- form that is connected to '/' (index)-->
+    <div class="input_box">
+        <h5>Channel</h5>
+        <p>channel number</p>
+        <input class="write" type="text" name="ch_num">
+        <input class="button" type="submit" value="Save Final Filter Set">
+    </div>
+</form>
+{% endblock %}
