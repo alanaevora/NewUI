@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>CreateFilters</title>
+{% endblock %}
+
+{% block body %}
+<h2>Design</h2>
+<form action='/design/' method='POST'> <!-- form that is connected to '/' (index)-->
+    <div class="display_box">
+        <div class="columns">
+            <p>CH1</p>
+            <p>CH2</p>
+            <p>CH3</p>
+            <p>CH4</p>
+            <p>CH5</p>
+            <p>CH6</p>
+            <p>CH7</p>
+            <p>CH8</p>
+        </div>
+        <div class="columns">
+            <input type="file" name="ch_file_1">
+            <input type="file" name="ch_file_2">
+            <input type="file" name="ch_file_3">
+            <input type="file" name="ch_file_4">
+            <input type="file" name="ch_file_5">
+            <input type="file" name="ch_file_6">
+            <input type="file" name="ch_file_7">
+            <input type="file" name="ch_file_8">
+        </div>
+        <div class="columns">
+            <input type="text" name="ch_peak_1">
+            <input type="text" name="ch_peak_2">
+            <input type="text" name="ch_peak_3">
+            <input type="text" name="ch_peak_4">
+            <input type="text" name="ch_peak_5">
+            <input type="text" name="ch_peak_6">
+            <input type="text" name="ch_peak_7">
+            <input type="text" name="ch_peak_8">
+        </div>
+    </div>
+    <div class="input_box">
+        <h5>Experiment</h5>
+        <p>Experiment name</p>
+        <input class="write" type="text" name="exp_name">
+        <p>round number</p>
+        <input class="write" type="text" name="round_num">
+        <input class="button" type="submit" value="Save current round">
+    </div>
+</form>
+{% endblock %}
