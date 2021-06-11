@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>CreateFilters</title>
+{% endblock %}
+
+{% block body %}
+<h2>Create Filters</h2>
+<div class="display_box">
+    <img src="{{ url_for('static', filename='images/figure.png') }}" alt="figure">
+    <img src="{{ url_for('static', filename='images/filter1.png') }}" alt="filter1">
+    <img src="{{ url_for('static', filename='images/filter2.png') }}" alt="filter2">
+    <img src="{{ url_for('static', filename='images/filter3.png') }}" alt="filter3">
+    <img src="{{ url_for('static', filename='images/filter4.png') }}" alt="filter4">
+    <img src="{{ url_for('static', filename='images/filter5.png') }}" alt="filter5">
+    <img src="{{ url_for('static', filename='images/filter6.png') }}" alt="filter6">
+    <img src="{{ url_for('static', filename='images/filter7.png') }}" alt="filter7">
+    <img src="{{ url_for('static', filename='images/filter8.png') }}" alt="filter8">
+</div>
+<form action='/create/' method='POST'> <!-- form that is connected to '/' (index)-->
+    <div class="input_box">
+        <h5>Frequency Range</h5>
+        <p>low frequency</p>
+        <input class="write" type="text" name="low_freq">
+        <p>high frequency</p>
+        <input class="write" type="text" name="hi_freq">
+    </div>
+    <div class="input_box">
+        <h5>Sampling Rate</h5>
+        <p>fs</p>
+        <input class="write" type="text" name="fs">
+        <p>nfft</p>
+        <input class="write" type="text" name="nfft">
+        <input class="button" type="submit" value="Save">
+
+    </div>
+    <!-- For displaying filter figures:
+    1. Generate filter figures with matplot lib in python
+    2. Save figures to file
+    3. Convert figures to image
+        fig.savefig('plot.png')
+    4. Display images and hyperlink them to file which will open with matplotlib-->
+</form>
+{% endblock %}
